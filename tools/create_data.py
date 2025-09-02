@@ -35,9 +35,9 @@ def nuscenes_data_prep(root_path,
             root_path, info_test_path, version=version)
     else:
         info_train_path = osp.join(
-            out_dir, f'{info_prefix}_infos_temporal_train_uniad2.0.pkl')
+            out_dir, f'{info_prefix}_infos_temporal_train.pkl')
         info_val_path = osp.join(
-            out_dir, f'{info_prefix}_infos_temporal_val_uniad2.0.pkl')
+            out_dir, f'{info_prefix}_infos_temporal_val.pkl')
         nuscenes_converter.export_2d_annotation(
             root_path, info_train_path, version=version)
         nuscenes_converter.export_2d_annotation(
